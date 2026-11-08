@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>TheYodhanGuy's site</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>Welcome Everyone!</h1>
-        <p>Hi, I'm Yodhan, your sitemaster. But I called TheYodhanGuy's site because my channel and username on most gaming stuff is TheYodhanGuy. </p>
-    </body>
+
+<head>
+    <title>TheYodhanGuy's site</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let textWall = $("<p id='textWall'>This is a wall of text!</p>");
+            $("body").append(textWall);
+
+            $(document).scroll(function () {
+                $("#textWall").append("This is a wall of text!");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Welcome Everyone!</h1>
+    <p>Hi, I'm Yodhan, your sitemaster. But I called TheYodhanGuy's site because my channel and username on most gaming
+        stuff is TheYodhanGuy. </p>
+</body>
+
 </html>
