@@ -7,17 +7,19 @@
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script>
         $(document).ready(function () {
-            let textWall = $("<p id='textWall'>This is a wall of text!</p>");
-            $("body").append(textWall);
+            $("#welcome").click(function () {
+                for(i = 0; i++; i < 361) {
+                    $("#welcome").css("transform", "rotateX(${i}deg)");
+                }
+            });
         });
     </script>
 </head>
 
 <body>
-    <h1>Welcome Everyone!</h1>
-    <p>Hi, I'm Yodhan, your sitemaster. But I called TheYodhanGuy's site because my channel and username on most gaming
-        stuff is TheYodhanGuy. By the way, below is a some text saiding some text because it's cool, I guess. And now
-        why made this site was because... ...I don't know, I made it because I think it's cool.</p>
+    <h1 id="welcome">Welcome Everyone!</h1>
+    <p>Hi, I'm Yodhan, your sitemaster. But I called TheYodhanGuy's site because my channel and username on most gaming stuff is TheYodhanGuy. By the way, below is a some text saiding some text because it' s cool, I guess. And now why made this site was because... ...I don't know, I made it because I think it's cool.</p>
+    <button id="hello">hello</button>
 </body>
 
 </html>
