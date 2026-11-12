@@ -4,11 +4,11 @@ body {
     width: 100vw;
     min-height: 100vh;
     background-color: #3b81b9;
+    overflow-x: hidden;
 }
 
 .main {
     padding: 0px 16px;
-    overflow-x: hidden;
 }
 
 .sidebar  {
