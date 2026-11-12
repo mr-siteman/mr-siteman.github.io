@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stick Territory War</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="ruffle-0.5.0-web-selfhosted/ruffle.js"></script>
+    <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("embed");
+        container.appendChild(player);
+        player.ruffle().load("flash/stick-territory-war.swf");
+        player.style.width = "100vw"; 
+        player.style.height = "100vh";
+    });
+    </script>
+</head>
+<body>
+    <div id="embed"></div>
+</body>
+
+</html>

@@ -7,22 +7,22 @@ body {
 }
 
 .main {
-    margin-left: calc(20% + 2px);
-    padding: 0px 10px;
-    overflow-x: hidden;
-    height: 100%;
+    padding: 16px;
 }
 
-.sidebar {
-  height: 100%;
-  width: 20%;
-  position: fixed;
-  z-index: 1;
+.sidebar  {
+  position: sticky;
   top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-  background-color: #949da8;
+  padding: 10px 16px;
+  background: #ecb055;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar a {
+    min-width: 40px;
+    margin: 0 32px;
 }
 
 h1 {
