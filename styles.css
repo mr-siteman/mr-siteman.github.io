@@ -23,6 +23,7 @@ body {
 }
 
 .sidebar a {
+    box-sizing: border-box;
     min-width: 40px;
     margin: 0 32px;
 }
