@@ -4,12 +4,31 @@
 <head>
     <title>TheYodhanGuy's site</title>
     <link rel="stylesheet" href="/styles.css">
+    <script>
+        function openCloak() {
+            let win = window.open("about:blank");
+
+            let iframe = win.document.createElement("iframe");
+
+            iframe.src = "https://theyodhanguy.github.io";
+            iframe.style.width = "100vw";
+            iframe.style.height = "100vh";
+            
+            win.document.body.style.margin = "0";
+            win.document.body.style.padding = "0";
+            win.document.body.style.overflow = "hidden";
+
+            win.document.body.appendChild(iframe);
+            window.close();
+        }
+    </script>
 </head>
 
 <body>
     <div class="sidebar">
         <a href="/">Home</a><br />
         <a href="/games">Games</a><br />
+        <a href="/" onclick="openCloak();">Cloaker</a>
     </div>
     <div class="main">
         <h1 id="welcome">Welcome Everyone!</h1>
