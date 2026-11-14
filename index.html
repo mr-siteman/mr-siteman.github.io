@@ -2,42 +2,21 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TheYodhanGuy's site</title>
-    <link rel="stylesheet" href="/styles.css">
-    <script>
-        function openCloak() {
-            let win = window.open("about:blank");
-
-            let iframe = win.document.createElement("iframe");
-
-            iframe.src = "https://theyodhanguy.github.io";
-            iframe.style.width = "100vw";
-            iframe.style.height = "100vh";
-            iframe.style.borderStyle = "hidden";
-            
-            win.document.body.style.margin = "0";
-            win.document.body.style.padding = "0";
-            win.document.body.style.overflow = "hidden";
-
-            win.document.body.appendChild(iframe);
-            window.close();
-        }
-    </script>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/assets/cloak.js"></script>
 </head>
 
 <body>
     <div class="sidebar">
-        <a href="/">Home</a><br />
-        <a href="/games">Games</a><br />
+        <a href="/">Home</a>
+        <a href="/games">Games</a>
         <a href="/" onclick="openCloak();">Cloaker</a>
     </div>
     <div class="main">
         <h1 id="welcome">Welcome Everyone!</h1>
-        <p>Hi, I'm Yodhan, your sitemaster. But I called TheYodhanGuy's site because my channel and username on most
-            gaming
-            stuff is TheYodhanGuy. And now why made this site was because... ...I don't know, I made it because I think
-            it's cool. By the way, Now the wall of text
-            is gone and there's a sidebar.</p>
+        <p>Hi, I'm Yodhan, your sitemaster. This is my site.</p>
     </div>
 </body>
 

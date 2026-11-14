@@ -2,61 +2,64 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TheYodhanGuy's site</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="/assets/cloak.js"></script>
 </head>
 
 <body>
     <div class="sidebar">
-        <a href="/">Home</a><br />
-        <a href="/games">Games</a><br />
+        <a href="/">Home</a>
+        <a href="/games">Games</a>
+        <a href="/" onclick="openCloak();">Cloaker</a>
     </div>
     <div class="main">
         <h1 id="welcome">Click on a link to play</h1>
-        <a href="/games/ageofwar">Age of War</a><br>
-        <a href="/games/amongus">Among Us</a><br>
-        <a href="/games/awesome-tanks">Awesome Tanks</a><br>
-        <a href="/games/backrooms">Backrooms</a><br>
-        <a href="/games/btd4">BTD 4</a><br>
-        <a href="/games/castle">Defend your Castle</a><br>
-        <a href="/games/dice">Dice a Million</a><br>
-        <a href="/games/dm2">Dogeminer 2</a><br>
-        <a href="/games/fish">Tiny Fishing</a><br>
-        <a href="/games/ovo">OVO</a><br>
-        <a href="/games/stick-hook">Stickman Hook</a><br>
-        <a href="/games/tennis">Tennis</a><br>
-        <a href="/games/tower">Big Tower Tiny Sqaure</a><br>
-        <a href="/games/tower-2">Big Tower Tiny Sqaure 2</a><br>
-        <a href="/games/neon-tower">Big Neon Tower Tiny Sqaure</a><br>
-        <a href="/games/ice-tower">Big Ice Tower Tiny Sqaure</a><br>
-        <a href="/games/btd5">BTD 5</a><br>
-        <a href="/games/fruit-ninja">Fruit Ninja</a><br>
-        <a href="/games/sm64">Super Mario 64</a><br>
-        <a href="/games/ducklife5">Duck Life 5</a><br>
-        <a href="/games/quiz1">The Impossible Quiz 1</a><br>
-        <a href="/games/run2">Run 2</a><br>
-        <a href="/games/redball4">Red Ball 4</a><br>
-        <a href="/games/cookie-clicker">Cookie Clicker</a><br>
-        <a href="/games/gd">Geometry Dash</a><br>
-        <a href="/games/smallsoccer">A Small World Cup</a><br>
-        <a href="/games/snow3d">Snow Rider 3D</a><br>
-        <a href="/games/sonic">Sonic</a><br>
-        <a href="/games/sonic2">Sonic 2</a><br>
-        <a href="/games/3d-free-kick">3D Free Kick</a><br>
-        <a href="/games/8ball">8 Ball</a><br>
-        <a href="/games/angry-birds">Angry Birds</a><br>
-        <a href="/games/2048">2048</a><br>
-        <a href="/games/agar-io-lite">Agar.io lite</a><br>
-        <a href="/games/awesome-tanks-2">Awesome Tanks 2</a><br>
-        <a href="/games/bad-time-simulator">Sans Boss Fight</a><br>
-        <a href="/games/doodle-jump">Doodle Jump</a><br>
-        <a href="/games/minecraft">Minecraft 1.8 (WASM)</a><br>
-        <a href="/games/raldi">Raldi's Crackhouse</a><br>
-        <a href="/games/stickrpg">Stick RPG</a><br>
-        <a href="/games/stick-territory-war">Stick Territory War</a><br>
-        <a href="/games/sonic3">Sonic 3</a><br>
-        <a href="/games/sonicCD">Sonic CD</a><br>
-        <a href="/games/motox3m">Motox3m</a><br>
+        <a href="/games/ageofwar">Age of War</a>
+        <a href="/games/amongus">Among Us</a>
+        <a href="/games/awesome-tanks">Awesome Tanks</a>
+        <a href="/games/backrooms">Backrooms</a>
+        <a href="/games/btd4">BTD 4</a>
+        <a href="/games/castle">Defend your Castle</a>
+        <a href="/games/dice">Dice a Million</a>
+        <a href="/games/dm2">Dogeminer 2</a>
+        <a href="/games/fish">Tiny Fishing</a>
+        <a href="/games/ovo">OVO</a>
+        <a href="/games/stick-hook">Stickman Hook</a>
+        <a href="/games/tennis">Tennis</a>
+        <a href="/games/tower">Big Tower Tiny Sqaure</a>
+        <a href="/games/tower-2">Big Tower Tiny Sqaure 2</a>
+        <a href="/games/neon-tower">Big Neon Tower Tiny Sqaure</a>
+        <a href="/games/ice-tower">Big Ice Tower Tiny Sqaure</a>
+        <a href="/games/btd5">BTD 5</a>
+        <a href="/games/fruit-ninja">Fruit Ninja</a>
+        <a href="/games/sm64">Super Mario 64</a>
+        <a href="/games/ducklife5">Duck Life 5</a>
+        <a href="/games/quiz1">The Impossible Quiz 1</a>
+        <a href="/games/run2">Run 2</a>
+        <a href="/games/redball4">Red Ball 4</a>
+        <a href="/games/cookie-clicker">Cookie Clicker</a>
+        <a href="/games/gd">Geometry Dash</a>
+        <a href="/games/smallsoccer">A Small World Cup</a>
+        <a href="/games/snow3d">Snow Rider 3D</a>
+        <a href="/games/sonic">Sonic</a>
+        <a href="/games/sonic2">Sonic 2</a>
+        <a href="/games/3d-free-kick">3D Free Kick</a>
+        <a href="/games/8ball">8 Ball</a>
+        <a href="/games/angry-birds">Angry Birds</a>
+        <a href="/games/2048">2048</a>
+        <a href="/games/agar-io-lite">Agar.io lite</a>
+        <a href="/games/awesome-tanks-2">Awesome Tanks 2</a>
+        <a href="/games/bad-time-simulator">Sans Boss Fight</a>
+        <a href="/games/doodle-jump">Doodle Jump</a>
+        <a href="/games/minecraft">Minecraft 1.8 (WASM)</a>
+        <a href="/games/raldi">Raldi's Crackhouse</a>
+        <a href="/games/stickrpg">Stick RPG</a>
+        <a href="/games/stick-territory-war">Stick Territory War</a>
+        <a href="/games/sonic3">Sonic 3</a>
+        <a href="/games/sonicCD">Sonic CD</a>
+        <a href="/games/motox3m">Motox3m</a>
     </div>
 </body>
 
